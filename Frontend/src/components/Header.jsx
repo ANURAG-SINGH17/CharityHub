@@ -24,12 +24,12 @@ const Header = () => {
       <span className="text-blue-500">Charity</span>Hub
     </div>
     <nav className="space-x-6 text-lg text-white font-semibold">
-      <a
-        href="#"
+      <Link
+        href="/"
         className="hover:text-blue-500 transition duration-300 ease-in-out"
       >
         Home
-      </a>
+      </Link>
       <a
         href="#about"
         className="hover:text-blue-500 transition duration-300 ease-in-out"
@@ -42,12 +42,12 @@ const Header = () => {
       >
         Contact
       </a>
-      <a
+      <Link
         href="/profile"
         className="hover:text-blue-500 transition duration-300 ease-in-out"
       >
         Profile
-      </a>
+      </Link>
     </nav>
     <div className="flex items-center space-x-4">
     {userData && userData.fullname ? (
