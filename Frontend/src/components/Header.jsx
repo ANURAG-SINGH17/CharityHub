@@ -25,7 +25,7 @@ const Header = () => {
     </div>
     <nav className="space-x-6 text-lg text-white font-semibold">
       <Link
-        href="/"
+        to="/"
         className="hover:text-blue-500 transition duration-300 ease-in-out"
       >
         Home
@@ -43,7 +43,7 @@ const Header = () => {
         Contact
       </a>
       <Link
-        href="/profile"
+          to="/profile"
         className="hover:text-blue-500 transition duration-300 ease-in-out"
       >
         Profile
