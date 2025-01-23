@@ -7,7 +7,13 @@ connectToDB();
 
 const usersRouter = require('./routes/user.routes')
 
-app.use(cors());
+const corsOptions = {
+    origin: 'https://charity-hub-nine.vercel.app', // Allow only this origin
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+  };
+    
+    app.use(cors(corsOptions));
 app.use(express.json());
 app.use(cookiesParser());
 app.use(express.urlencoded({extended:true}));
