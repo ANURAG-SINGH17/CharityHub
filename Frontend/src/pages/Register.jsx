@@ -32,7 +32,7 @@ const Register = () => {
       if(response.status === 200){
         const data = response.data;
         localStorage.setItem('token' , data.token)
-        navigate('/')
+        navigate('/profile')
 
       }
 
