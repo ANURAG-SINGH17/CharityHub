@@ -15,7 +15,7 @@ app.use(express.urlencoded({extended:true}));
 app.use('/users' , usersRouter)
 
 app.get('/' , (req , res) => {
-    res.status(200).json({ message: 'Hello from Vercel!' });  
+    res.send('hii ')
 })
 
 module.exports = app;
